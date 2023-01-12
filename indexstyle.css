@@ -2,7 +2,11 @@
 	padding: 0px;
 	margin: 0px;
 }
-
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.google.com/specimen/Inter);
+  }
+  
 .container{
     width: 100vw;
     height: 120vh;
@@ -15,11 +19,19 @@ body{
     background-color: white;
 }
 
+p{
+    font-size: 15px;
+}
+
+.image1>img{
+    height:120px
+}
 
 
 .content{
     width: 80%;
     height: 80%;
+    gap: 20px;
     border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -31,6 +43,22 @@ body{
     
 }
 
+nav{
+    text-align: right;
+    background-color: white;
+    width: 100%;
+    display:flex;
+}
+
+nav ul{
+
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+
+
 .section1{
     grid-area: section1;
     display: flex;
@@ -38,7 +66,7 @@ body{
 
 }
 .section1 img{
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
@@ -47,7 +75,12 @@ body{
 .section2{
     background-color:hsl(240, 100%, 5%);
     grid-area: section2;
-    
+    padding: 5%;
+      
+}
+
+.hydro{
+    padding-top: 5%;
 }
 
 .section2 p, h2{
@@ -63,11 +96,13 @@ button{
     color: white;
     border: 0px;
     padding: 15px;
+    margin-top: 5%;
 }
 
 .section3{
     grid-area: section3;
     padding: 20px;
+    font-family: myFirstFont;
 }
 
 .section4{
