@@ -1,0 +1,116 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.container{
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: white;
+}
+
+nav{
+    text-align: right;
+    width: 100%;
+}
+
+nav ul{
+
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left:70px;
+    position: relative;
+}
+
+nav a:visited{
+   color:gray;
+}
+
+nav a{
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#w{
+    float: left;
+}
+
+.content{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "section1 section1 section2"
+    "section3 section4 section2"
+    "section5 section6 section7";
+    
+}
+
+.section1{
+    grid-area: section1;
+}
+
+.section1 img{
+    width: 66%;
+    height: 40%;
+}
+
+.section2{
+    background-color:black;
+    grid-area: section2;
+}
+
+.section2 p, h2{
+    color: white;
+}
+
+.section2 h1{
+    color: hsl(35, 77%, 62%);
+}
+
+button{
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    border: 0px;
+    padding: 15px;
+}
+
+.section3{
+    grid-area: section3;
+}
+
+.section4{
+    grid-area: section4;
+}
+
+.section5{
+    grid-area: section5;
+    display: flex;
+}
+
+.section6{
+    grid-area: section6;
+    display: flex;
+}
+
+.section7{
+    grid-area: section7;
+    display: flex;
+}
+.section8{
+    display: flex;
+}
